@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume</title>
+  <style>
+    /* Reset some defaults */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.4;
+      padding: 20px;
+    }
+    .resume-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+    .header .photo {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid #666;
+      margin-right: 25px;
+    }
+    .header .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .header .info {
+      flex: 1;
+    }
+    .header .info h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    .header .info p {
+      font-size: 1em;
+      color: #666;
+      margin: 4px 0;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    section h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #444;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .job, .edu {
+      margin-bottom: 15px;
+    }
+    .job h3, .edu h3 {
+      font-size: 1.2em;
+      margin-bottom: 3px;
+    }
+    .job .duration, .edu .duration {
+      font-size: 0.95em;
+      color: #777;
+    }
+    .skills ul, .documents ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .skills li, .documents li {
+      margin-bottom: 6px;
+    }
+    .documents a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .documents a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .resume-container {
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <header class="header">
+      <div class="photo">
+        <img src="d:\FAMILY PHOTOS\New folder\mammi\share me\SD.jpg" alt="   srushti" />
+      </div>
+      <div class="info">
+        <h1>Srushti deshmukh</h1>
+        <p>softwarw engg.</p>
+        <p>Email:srushtideshmukh4228@gmail.com | Phone: +91-937022XXX</p>
+      </div>
+    </header>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>
+        A brief introduction to who you are, what you do, your key skills, and what you want to achieve.
+      </p>
+    </section>
+
+    <section class="experience">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <h3>Senior Developer — Awesome Company</h3>
+        <p class="duration">Jan 2022 – Present</p>
+        <p>
+          Describe your role, responsibilities, achievements. Use bullet points if needed.
+        </p>
+      </div>
+      <div class="job">
+        <h3>Software Engineer — TechCorp</h3>
+        <p class="duration">June 2025 – Dec 2021</p>
+        <p>
+          Describe what you did in that role, technologies used, etc.
+        </p>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>Bachelor of Engineering in Computer Science —  kolhapur University</h3>
+        <p class="duration">2025 – 2027</p>
+      </div>
+      <div class="edu">
+        <h3>High School — shri shivaji vidyalaya School</h3>
+        <p class="duration">2020 – 2021</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: JavaScript, Python, Java</li>
+        <li>Web Development: HTML, CSS, React, Node.js</li>
+        <li>Database & Tools: MySQL, MongoDB, Git, Docker</li>
+        <li>Soft Skills: Communication, Problem Solving, Teamwork</li>
+      </ul>
+    </section>
+
+    <section class="documents">
+      <h2>Documents & Certificates</h2>
+      <ul>
+        <li><a href="certificate1.pdf" target="_blank">Certificate in Web Development</a></li>
+        <li><a href="certificate2.pdf" target="_blank">Advanced Java Certification</a></li>
+        <li><a href="resume-additional-document.pdf" target="_blank">Additional Document / Transcript</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2025 srushti deshmukh. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
